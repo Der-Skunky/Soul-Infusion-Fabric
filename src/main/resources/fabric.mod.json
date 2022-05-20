@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "soulinfusion",
+  "version": "${version}",
+
+  "name": "Soul Infusion",
+  "description": "Infuse your Weapons and Tools with Souls to make them more powerful",
+  "authors": [
+    "Skunky"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/soulinfusion/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.skunky.soulinfusion.client.SoulInfusionClient"
+    ],
+    "main": [
+      "net.skunky.soulinfusion.SoulInfusion"
+    ]
+  },
+  "mixins": [
+    "soulinfusion.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
